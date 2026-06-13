@@ -77,7 +77,9 @@ npm install
 npm run dev                   # http://localhost:5173
 ```
 
-Drag `sample_data/hbl_statement_2026_q1.csv` and `..._q2.csv` onto the upload box. The sample data has a few things planted in it: a large jewellery purchase in March (flagged as an anomaly), a duplicated food-delivery charge in April, and a Netflix price rise in May (caught as a recurring price change). Re-upload a file to watch the dedup skip everything.
+Drag `sample_data/hbl_statement_2026_q1.csv` and `..._q2.csv` onto the upload box. There's also a text-PDF version, `hbl_statement_2026_q1.pdf`, if you want to try the PDF path. The sample data has a few things planted in it: a large jewellery purchase in March (flagged as an anomaly), a duplicated food-delivery charge in April, and a Netflix price rise in May (caught as a recurring price change). Re-upload a file to watch the dedup skip everything.
+
+Note on PDFs: a *text* PDF (one with a selectable text layer, like an export from online banking) is parsed directly. A *scanned/image* PDF needs OCR, which is an opt-in extra (`pip install -e ".[ocr]"` plus `brew install tesseract poppler`) and is not included in the hosted demo.
 
 Optional extras: `pip install -e ".[ocr]"` plus `brew install tesseract poppler` for scanned PDFs; `".[embeddings]"` for sentence-transformers (otherwise a small built-in embedder is used); `".[tables]"` for camelot.
 
