@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+.pytest_cache/
+.hypothesis/
+
+# Env & data
+.env
+backend/finance.db
+backend/*.db
+
+# Node
+node_modules/
+frontend/dist/
+*.tsbuildinfo
+
+# Local tooling
+.claude/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

@@ -1,0 +1,7 @@
+Statement of Account
+Opening Balance:,"50,000.00"
+Transaction Date,Description,Withdrawal Amount,Deposit Amount,Available Balance
+01/02/2026,SALARY ACME CORP PAYROLL,,"250,000.00","300,000.00"
+04/02/2026,FOODPANDA ORDER TXN 8821,"4,500.00",,"295,500.00"
+07/02/2026,CAREEM RIDES REF*9A,"1,500.00",,"294,000.00"
+Closing Balance:,"294,000.00"

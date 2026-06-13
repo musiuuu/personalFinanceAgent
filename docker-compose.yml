@@ -1,0 +1,10 @@
+# One-command local run of the full app (API + dashboard) on http://localhost:8000
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - SEED_ON_STARTUP=true
+      # Add your key to enable the LLM path; omit to run in heuristic mode.
+      # - ANTHROPIC_API_KEY=sk-ant-...

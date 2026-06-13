@@ -1,0 +1,13 @@
+# Render blueprint: one free Docker web service serving the API + dashboard.
+# Push this repo to GitHub, then on render.com: New → Blueprint → pick the repo.
+services:
+  - type: web
+    name: finance-agent
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: SEED_ON_STARTUP
+        value: "true"
+      # Optional: set ANTHROPIC_API_KEY in the Render dashboard to enable the
+      # LLM path. The demo works fully without it.
