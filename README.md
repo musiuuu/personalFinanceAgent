@@ -1,5 +1,7 @@
 # Personal Finance Agent
 
+**Live demo: https://finance-agent-n926.onrender.com** &nbsp;·&nbsp; *(hosted on a free tier — the first visit can take ~30–60s to wake)*
+
 A finance assistant that reads your bank statements and answers questions about them. The twist is in the division of labour: a language model decides *what* to do, but it never does the arithmetic. Every rupee figure comes from plain Python with unit tests behind it. The model classifies the question, fills in the arguments for a tool, and writes the final sentence. Nothing more.
 
 ![Dashboard](docs/dashboard.png)
