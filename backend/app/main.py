@@ -26,7 +26,7 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(
-    title="Personal Finance Agent",
+    title="FinanceAgent",
     description="LLM plans, routes and explains; a deterministic engine computes.",
     lifespan=lifespan,
 )

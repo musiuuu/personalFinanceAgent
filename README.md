@@ -1,4 +1,4 @@
-# Personal Finance Agent
+# FinanceAgent
 
 **Live demo: https://finance-agent-n926.onrender.com** &nbsp;·&nbsp; *(hosted on a free tier — the first visit can take ~30–60s to wake)*
 
@@ -85,19 +85,13 @@ Note on PDFs: a *text* PDF (one with a selectable text layer, like an export fro
 
 Optional extras: `pip install -e ".[ocr]"` plus `brew install tesseract poppler` for scanned PDFs; `".[embeddings]"` for sentence-transformers (otherwise a small built-in embedder is used); `".[tables]"` for camelot.
 
-## Live demo / deploy
+## Running as one container
 
-The app ships as a single container: FastAPI serves the API and the built dashboard from one origin, the sample data seeds itself on first boot, and no API key is required. Run it in one command:
+The app also ships as a single container: FastAPI serves the API and the built dashboard from one origin, with the sample data seeded on first boot and no API key required.
 
 ```bash
 docker compose up --build      # http://localhost:8000
 ```
-
-To put it online for free, push to GitHub and deploy on Render with the included blueprint:
-
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/musiuuu/personalFinanceAgent)
-
-Render's free tier sleeps after about 15 minutes idle, so the first visit can take ~30–60s to wake. Full steps are in [DEPLOY.md](DEPLOY.md).
 
 ## Project layout
 

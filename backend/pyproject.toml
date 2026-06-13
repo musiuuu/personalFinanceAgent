@@ -1,7 +1,7 @@
 [project]
 name = "finance-agent-backend"
 version = "0.1.0"
-description = "Personal Finance Agent — deterministic engine + LLM orchestration"
+description = "FinanceAgent — deterministic engine + LLM orchestration"
 requires-python = ">=3.11"
 dependencies = [
     "fastapi>=0.110",
